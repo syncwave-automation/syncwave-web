@@ -1,10 +1,11 @@
-"use client";
+"use client"; // Marks this component as a client-side rendered component in Next.js.
 
-import React from "react";
-import { SyncwaveLogo } from "./NavBar";
-import { Link } from "@nextui-org/react";
+import React from "react"; // Import React for JSX rendering and component creation.
+import { SyncwaveLogo } from "./NavBar"; // Import the logo component from the NavBar file.
+import { Link } from "@nextui-org/react"; // Import the Link component from NextUI library.
 
 const Footer = () => {
+  // Array for menu items with their display names and URLs.
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
@@ -14,6 +15,7 @@ const Footer = () => {
   ];
 
   const socialLinks = [
+     /* GitHub Icon SVG Path */
     {
       name: "Github",
       href: "https://github.com/syncwave-automation",
@@ -25,13 +27,14 @@ const Footer = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-        
-<path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"
-fill="currentColor"
-></path>
-</svg>
+          <path
+            d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"
+            fill="currentColor"
+          ></path>
+        </svg>
       ),
     },
+    /* Twitter Icon SVG Path */
     {
       name: "Twitter",
       href: "https://x.com/SyncwavePvtLtd",
@@ -52,6 +55,7 @@ fill="currentColor"
         </svg>
       ),
     },
+    /* YouTube Icon SVG Path */
     {
       name: "Youtube",
       href: "https://www.youtube.com/@SyncwaveAutomation",
@@ -66,6 +70,7 @@ fill="currentColor"
         </svg>
       ),
     },
+    /* LinkedIn Icon SVG Path */
     {
       name: "LinkedIn",
       href: "https://www.linkedin.com/company/syncwave-automation",
@@ -83,12 +88,14 @@ fill="currentColor"
   ];
 
   return (
+    // Main footer container with styling.
     <footer className="bg-zinc-100 dark:bg-zinc-900 text-gray-700 dark:text-gray-300 py-8">
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+          {/* Left Section: Logo and Social Links */}
           <div className="flex flex-col items-center lg:items-start">
-            <SyncwaveLogo />
+            <SyncwaveLogo /> {/* Display company logo */}
             <p className="mt-2 text-sm text-center lg:text-left">
               Building the future, one solution at a time.
             </p>
@@ -103,11 +110,13 @@ fill="currentColor"
                   className="text-gray-500 hover:text-primary"
                   aria-label={social.name}
                 >
-                  {social.svg}
+                  {social.svg} {/* Render social media icon */}
                 </a>
               ))}
             </div>
           </div>
+
+          {/* Right Section: Menu Links */}
           <div className="flex gap-6">
             {menuItems.map((item) => (
               <Link
@@ -115,12 +124,13 @@ fill="currentColor"
                 href={item.href}
                 className="hover:text-primary"
               >
-                {item.name}
+                {item.name} {/* Render menu link */}
               </Link>
             ))}
           </div>
         </div>
 
+        {/* Horizontal Divider */}
         <hr className="my-6 border-gray-200 dark:border-gray-700" />
 
         {/* Bottom Section */}
@@ -135,4 +145,5 @@ fill="currentColor"
   );
 };
 
-export default Footer;
+export default Footer; // Export the Footer component for use in other parts of the application.
+
