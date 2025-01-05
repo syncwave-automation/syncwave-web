@@ -1,29 +1,37 @@
 "use client";
 import React from "react";
 import { Button } from "@nextui-org/react";
-// import { BgBoxes } from "@/components/ui/BackgroundBoxes";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { CardsStacked } from "./CardsStacked";
 import { Cover } from "./ui/Cover";
-import { HeroHighlight } from "./ui/BgHighlight";
-import { BgBoxes } from "./ui/BackgroundBoxes";
+// import { HeroHighlight } from "./ui/BgHighlight";
+// import { BgBoxes } from "./ui/BackgroundBoxes";
+import { HeroHighlight } from "./ui/HeroHighlight";
 
 const HeroSection = () => {
   const { theme } = useTheme(); // Get the current theme
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsDarkMode(theme === "dark");
+  }, [theme]); // Update `isDarkMode` after hydration
+
+  if (!theme) return null; // Avoid rendering until the theme is available
+
   return (
     <div
       className={cn(
         "h-auto min-h-96 relative w-full overflow-hidden flex flex-col items-center justify-center transition-colors duration-300",
-        theme === "dark" ? "bg-zinc-900 text-white" : "bg-zinc-100 text-black"
+        isDarkMode ? "bg-black text-white" : "bg-white text-black"
       )}
     >
       {/* Radial Gradient */}
       <div
         className={cn(
           "absolute inset-0 w-full h-full z-10 pointer-events-none",
-          theme === "dark"
-            ? "bg-[radial-gradient(circle,_transparent_0%,_rgba(20,20,20,0.8)_80%)]"
+          isDarkMode
+            ? "bg-[radial-gradient(circle,_transparent_0%,_rgba(0,0,0,0.8)_80%)]"
             : "bg-[radial-gradient(circle,_transparent_0%,_rgba(255,255,255,0.8)_80%)]"
         )}
       />
@@ -36,7 +44,7 @@ const HeroSection = () => {
         <div
           className={cn(
             "aspect-[1108/632] w-[69.25rem] bg-gradient-to-r opacity-20",
-            theme === "dark"
+            isDarkMode
               ? "from-[#296f31] to-[#000000]"
               : "from-[#60ff98] to-[#dcfff0]"
           )}
@@ -49,8 +57,8 @@ const HeroSection = () => {
 
       {/* Background Boxes */}
       {/* <BgBoxes /> */}
-      <HeroHighlight>
-
+      {/* <HeroHighlight> */}
+          <HeroHighlight>
       {/* Hero Content */}
       <div className="container z-20 max-w-7xl flex flex-col lg:flex-row items-center justify-between px-6 pointer-events-none">
         {/* Left Content */}
@@ -107,6 +115,7 @@ const HeroSection = () => {
         </div>
       </div>
       </HeroHighlight>
+      {/* </HeroHighlight> */}
     </div>
   );
 };

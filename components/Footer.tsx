@@ -136,7 +136,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex justify-between items-center">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Syncwave Automation Pvt. Ltd.
+            ©2025 Syncwave Automation Pvt. Ltd.
           </p>
           <p className="text-sm text-gray-500">All rights reserved.</p>
         </div>
