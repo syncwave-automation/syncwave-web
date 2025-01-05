@@ -4,6 +4,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { SparklesCore } from "./ui/Sparkles";
 import { useTheme } from "next-themes";
+import { PinContainer } from "./ui/3d-pin";
 
 const WhatWeDoSection = () => {
   const { theme } = useTheme();
@@ -31,6 +32,7 @@ const WhatWeDoSection = () => {
           />
         </svg>
       ),
+      link: "/legal-tech",
     },
     {
       title: "IoT Automation",
@@ -53,6 +55,7 @@ const WhatWeDoSection = () => {
           />
         </svg>
       ),
+      link: "/iot-automation",
     },
     {
       title: "Customized Tech Solutions",
@@ -75,6 +78,7 @@ const WhatWeDoSection = () => {
           />
         </svg>
       ),
+      link: "/custom-tech",
     },
   ];
 
@@ -116,18 +120,21 @@ const WhatWeDoSection = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <div className=" w-full flex items-center justify-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
             {services.map((service, index) => (
-              <div
+              <PinContainer
                 key={index}
-                className="flex flex-col items-center text-center bg-zinc-100 dark:bg-zinc-800 rounded-lg shadow-md p-6"
+                title={service.title}
+                href={service.link}
               >
-                <div className="mb-4">{service.icon}</div>
-                <h3 className="text-lg font-semibold">{service.title}</h3>
-                <p className="text-sm mt-2 text-gray-700 dark:text-gray-300">
-                  {service.description}
-                </p>
-              </div>
+                <div className="flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[15rem] items-center text-center content-center place-content-center bg-white dark:bg-black dark:text-white p-6 rounded-lg shadow-lg">
+                  <div className="mb-8">{service.icon}</div>
+                  <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300">{service.title}</h3>
+                  <p className="text-sm mt-2 text-gray-700 dark:text-gray-300">
+                    {service.description}
+                  </p>
+                </div>
+              </PinContainer>
             ))}
           </div>
         </div>
