@@ -32,7 +32,7 @@ const WhatWeDoSection = () => {
           />
         </svg>
       ),
-      link: "/legal-tech",
+      link: "/",
     },
     {
       title: "IoT Automation",
@@ -55,7 +55,7 @@ const WhatWeDoSection = () => {
           />
         </svg>
       ),
-      link: "/iot-automation",
+      link: "/",
     },
     {
       title: "Customized Tech Solutions",
@@ -78,7 +78,7 @@ const WhatWeDoSection = () => {
           />
         </svg>
       ),
-      link: "/custom-tech",
+      link: "/",
     },
   ];
 
