@@ -153,28 +153,7 @@ const AboutUs = () => {
                 automation and legal technology.
               </p>
             </div>
-
-            {/* Subheading with Call-to-Action */}
-            <div className="mt-6 py-2 px-5 text-sm text-primary bg-[#d9ffe9]/10 rounded-3xl group border-[2px] border-primary/50 w-fit pointer-events-auto">
-              <pre className="uppercase flex items-center font-bold font-space-grotesk">
-                At Syncwave, we strive to bend technology and simplicity to
-                create impactful solutions that address real world challenges.
-                <svg
-                  className="ml-2 w-4 h-4 text-primary duration-300 group-hover:translate-x-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </pre>
-            </div>
+            
           </div>
 
           {/* Right Content: Stacked Cards */}
