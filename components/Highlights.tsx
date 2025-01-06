@@ -7,6 +7,7 @@ import { PinContainer } from "./ui/3d-pin";
 import { LampContainer } from "./ui/lamp";
 import { motion } from "framer-motion";
 import { FlipWords } from "./ui/FlipWord";
+import { Highlight } from "./ui/HeroHighlight";
 
 const Highlights = () => {
   const { theme } = useTheme();
@@ -86,7 +87,7 @@ const Highlights = () => {
     <div className="relative">
       {/* Main Section */}
                 {/* Section Title */}
-                <div className="bg-white dark:bg-black px-6 md:px-12 lg:px-20 text-gray-800 dark:text-gray-200">
+                {/* <div className="bg-white dark:bg-black px-6 md:px-12 lg:px-20 text-gray-800 dark:text-gray-200">
 
                 <h2 className="text-3xl sm:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center">
                   Our <FlipWords words={words} duration={9000} /> <br />
@@ -95,10 +96,9 @@ const Highlights = () => {
                 <h2 className="text-3xl sm:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center">
                   <FlipWords className="text-sm sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center" words={content} />
                   
-                </h2>
+                </h2> */}
     
-                  {/* <FlipWords words={content} /> */}
-              </div>
+        {/* </div> */}
       <div className="bg-white dark:bg-black text-gray-800 dark:text-gray-200">
         <div className="container mx-auto max-w-7xl">
            {/* Services Grid
