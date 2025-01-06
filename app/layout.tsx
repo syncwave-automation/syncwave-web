@@ -3,6 +3,7 @@ import { Poppins, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   weight: ["400", "600", "700"],
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Providers>
           <NavBar />
           <main>{children}</main>
+          <Footer />
         </Providers>
       </body>
     </html>
