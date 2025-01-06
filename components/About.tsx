@@ -171,7 +171,7 @@ const AboutUs = () => {
                             Our <FlipWords words={words} duration={9000} /> <br />
                             
                           </h2>
-                          <h2 className="">
+                          <h2 className="text-sm sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center">
                             <FlipWords className="text-sm sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center" words={content} />
                             
                           </h2>
@@ -179,27 +179,7 @@ const AboutUs = () => {
                             {/* <FlipWords words={content} /> */}
                         </div>
         </div>
-
-        {/* Services Grid
-                  <div className=" w-full flex items-center justify-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
-                    {highlights.map((service, index) => (
-                      <PinContainer
-                        key={index}
-                        title={service.title}
-                        // href={service.link}
-                      >
-                        <div className="flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[15rem] items-center text-center content-center place-content-center bg-white dark:bg-black dark:text-white p-6 rounded-lg shadow-lg">
-                          <div className="mb-8">{service.icon}</div>
-                          <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300">{service.title}</h3>
-                          <p className="text-sm mt-2 text-gray-700 dark:text-gray-300">
-                            {service.description}
-                          </p>
-                        </div>
-                      </PinContainer>
-                    ))}
-                  </div> */}
       </HeroHighlight>
-      {/* </HeroHighlight> */}
     </div>
   );
 };
