@@ -1,6 +1,6 @@
 "use client";
 import HeroSection from "@/components/HeroSection";
-import WhatWeDoSection from "@/components/About";
+import WhatWeDoSection from "@/components/WhatWeDo";
 
 export default function Page() {
   return (
