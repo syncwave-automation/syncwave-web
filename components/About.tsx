@@ -5,15 +5,18 @@ import { useTheme } from "next-themes";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { HeroHighlight } from "@/components/ui/HeroHighlight";
 import { FlipWords } from "@/components/ui/FlipWord";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   const { theme } = useTheme(); // Get the current theme
   const [isDarkMode, setIsDarkMode] = React.useState(false);
 
   const words = ["Vision", "Mission", "Values"];
-  const content = ["To empower users with AI-driven solutions that simplify legal and automation processes, fostering innovation and inclusivity for all.", "To transform India's legal and automation landscapes by making technology accessible, efficient, and privacy-conscious for homes, enterprises, and individuals.", "Innovation, accessibility, privacy, and sustainability guide us as we craft cutting-edge solutions tailored to meet unique challenges."];
-
+  const content = [
+    "To empower users with AI-driven solutions that simplify legal and automation processes, fostering innovation and inclusivity for all.",
+    "To transform India's legal and automation landscapes by making technology accessible, efficient, and privacy-conscious for homes, enterprises, and individuals.",
+    "Innovation, accessibility, privacy, and sustainability guide us as we craft cutting-edge solutions tailored to meet unique challenges.",
+  ];
 
   React.useEffect(() => {
     setIsDarkMode(theme === "dark");
@@ -159,25 +162,24 @@ const AboutUs = () => {
                 automation and legal technology.
               </p>
             </div>
-            
           </div>
 
           {/* Right Content: Stacked Cards */}
           <div className="hidden lg:block lg:px-30 pointer-events-auto max-w-2xl flex flex-col items-start"></div>
-           {/* Section Title */}
-                          <div className="bg-transparent dark:bg-transparent px-6 md:px-12 lg:px-20 text-gray-800 dark:text-gray-200">
-          
-                          <h2 className="text-3xl sm:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center">
-                            Our <FlipWords words={words} duration={9000} /> <br />
-                            
-                          </h2>
-                          <h2 className="text-sm sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center">
-                            <FlipWords className="text-sm sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center" words={content} />
-                            
-                          </h2>
-              
-                            {/* <FlipWords words={content} /> */}
-                        </div>
+          {/* Section Title */}
+          <div className="bg-transparent dark:bg-transparent px-6 md:px-12 lg:px-20 text-gray-800 dark:text-gray-200">
+            <h2 className="text-3xl sm:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center">
+              Our <FlipWords words={words} duration={9000} /> <br />
+            </h2>
+            <h2 className="text-sm sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center">
+              <FlipWords
+                className="text-sm sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center"
+                words={content}
+              />
+            </h2>
+
+            {/* <FlipWords words={content} /> */}
+          </div>
         </div>
       </HeroHighlight>
     </div>
