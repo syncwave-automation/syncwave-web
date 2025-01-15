@@ -5,9 +5,8 @@ import WhatWeDoSection from "@/components/WhatWeDo";
 export default function Page() {
   return (
     <div>
-      
       <HeroSection />
-      <WhatWeDoSection/>
+      <WhatWeDoSection />
     </div>
   );
 }

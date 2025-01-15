@@ -1,37 +1,11 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 
 export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
   const rows = new Array(150).fill(1);
   const cols = new Array(100).fill(1);
-  const colors = [
-    "--teal-200",
-    "--teal-300",
-    "--teal-400",
-    "--blue-200",
-    "--blue-300",
-    "--blue-400",
-    "--cyan-200",
-    "--cyan-300",
-    "--cyan-400",
-    "--emerald-200",
-    "--emerald-300",
-    "--emerald-400",
-    "--lime-200",
-    "--lime-300",
-    "--lime-400",
-    "--yellow-200",
-    "--yellow-300",
-    "--green-200",
-    "--green-300",
-    "--green-400",
-  ];
-  const getRandomColor = () => {
-    return colors[Math.floor(Math.random() * colors.length)];
-  };
 
   const { theme } = useTheme(); // Get the current theme
 
@@ -47,7 +21,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
       {...rest}
     >
       {rows.map((_, i) => (
-        <motion.div
+        <div
           key={`row-${i}`}
           className={cn(
             "w-16 h-8 border-l relative",
@@ -55,14 +29,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
           )}
         >
           {cols.map((_, j) => (
-            <motion.div
-              whileHover={{
-                backgroundColor: `var(${getRandomColor()})`,
-                transition: { duration: 0 },
-              }}
-              animate={{
-                transition: { duration: 2 },
-              }}
+            <div
               key={`col-${j}`}
               className={cn(
                 "w-16 h-8 border-r border-t relative",
@@ -88,9 +55,9 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
                   />
                 </svg>
               )}
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       ))}
     </div>
   );
