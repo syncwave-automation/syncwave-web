@@ -51,7 +51,7 @@ const HeroSection = () => {
       <div className="container z-20 max-w-7xl flex flex-col lg:flex-row items-center justify-between px-6">
         {/* Left Content */}
         <div className="max-w-2xl space-y-6">
-          <h1
+          <h2
             className={cn(
               "text-3xl sm:text-4xl font-semibold",
               "bg-clip-text text-transparent bg-gradient-to-b",
@@ -63,19 +63,18 @@ const HeroSection = () => {
               color: "inherit",
             }}
           >
-            We are Syncwave.
-          </h1>
+            Redefining Possibilities with Syncwave.
+          </h2>
 
           <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-            Syncwave specializes in delivering cutting-edge Legal Tech and IoT
-            solutions that drive innovation and efficiency. Our expertise
-            bridges the gap between technology and business, turning ideas into
-            impactful realities.
+          Syncwave specializes in innovative Legal Tech and IoT solutions. 
+          From seamless smart automation to AI-powered legal services, 
+          we redefine efficiency and connectivity for homes, businesses, and legal professionals.
           </p>
 
           <div>
             <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
-              Working on the <Cover>bleeding edge.</Cover>
+            Turning Bold Ideas Into <Cover>Brighter Realities.</Cover>
             </h2>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               From concept to reality, we craft solutions tailored to empower
@@ -85,7 +84,7 @@ const HeroSection = () => {
 
           <div className="py-2 px-5 text-sm text-primary bg-[#d9ffe9]/10 rounded-3xl group border-[2px] border-primary/50 w-fit">
             <pre className="uppercase flex items-center font-bold font-space-grotesk">
-              Build products for everyone
+            Creating Solutions That Connect Us All
               <svg
                 className="ml-2 w-4 h-4 text-primary duration-300 group-hover:translate-x-1"
                 xmlns="http://www.w3.org/2000/svg"
