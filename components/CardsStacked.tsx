@@ -28,37 +28,37 @@ export const Highlight = ({
 const CARDS = [
   {
     id: 0,
-    name: "Karen McConcern",
-    designation: "Director of Complaints",
+    name: "Shizuku",
+    designation: "Product Development Specialist",
     content: (
       <p>
-        I used these cards once, and now my{" "}
-        <Highlight>manager thinks</Highlight> I’m a UI expert. Honestly, it’s
-        all downhill from here.
+        Syncwave Automation Pvt. Ltd. excels in merging LegalTech and IoT solutions.{" "}
+        <Highlight>Their products, Automize and Leximo, </Highlight> offer innovative, user-friendly 
+        experiences that enhance efficiency and accessibility. 
       </p>
     ),
   },
   {
     id: 1,
-    name: "Chad Thundercode",
-    designation: "Full-Stack Overflow Engineer",
+    name: "Nausicaä",
+    designation: "Environmental Scientist",
     content: (
       <p>
-        I ran this in production without testing, and it{" "}
-        <Highlight>only broke</Highlight> half of the app. That’s what I call a
-        50% success rate!
+        I’m impressed with Automize’s{" "}
+        <Highlight>seamless integration capabilities.</Highlight> It provides exceptional control 
+        and security, making automation simple and effective for any environment.
       </p>
     ),
   },
   {
     id: 2,
-    name: "Patricia Debugging",
-    designation: "Chief Error Finder",
+    name: "Howl",
+    designation: "Chief Innovation Officer",
     content: (
       <p>
-        These cards are so intuitive, I didn’t even{" "}
-        <Highlight>have to Google</Highlight> how to use them. I did anyway,
-        just to be safe.
+        With Leximo, navigating the legal landscape has never been easier.{" "}
+        <Highlight>Its comprehensive database and user-friendly interface</Highlight> empower users to find accurate 
+        legal information quickly and efficiently.
       </p>
     ),
   },
