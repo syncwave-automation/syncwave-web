@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { CardsStacked } from "./CardsStacked";
 import { Cover } from "./ui/Cover";
-import { BgBoxes } from "./ui/BackgroundBoxes";
+import { HeroHighlight } from "./ui/HeroHighlight";
 
 const HeroSection = () => {
   const { theme } = useTheme(); // Current theme
@@ -27,8 +27,8 @@ const HeroSection = () => {
             : "bg-[radial-gradient(circle,_transparent_0%,_rgba(255,255,255,0.8)_80%)]"
         )}
       />
-      {/* Background Boxes */}
-      <BgBoxes />
+
+      <HeroHighlight>
       {/* Abstract Shape */}
       <div
         className="absolute left-1/2 top-10 transform -translate-x-1/2 blur-3xl -z-5"
@@ -51,6 +51,7 @@ const HeroSection = () => {
       <div className="container z-20 max-w-7xl flex flex-col lg:flex-row items-center justify-between px-6">
         {/* Left Content */}
         <div className="max-w-2xl space-y-6">
+          
           <h1
             className={cn(
               "text-3xl sm:text-4xl font-semibold",
@@ -109,6 +110,7 @@ const HeroSection = () => {
           <CardsStacked />
         </div>
       </div>
+      </HeroHighlight>
     </div>
   );
 };

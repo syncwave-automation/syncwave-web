@@ -23,8 +23,7 @@ const WhatWeDoSection = () => {
             <div className="absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-teal-400 to-transparent h-px w-full"></div>
 
             <p className="absolute text-center text-black dark:text-white text-base md:text-lg lg:text-lg px-4">
-              Our mission is to empower businesses and individuals through
-              cutting-edge technology tailored to their needs.
+            At Syncwave, we bend technology and simplicity to create impactful solutions that address real-world challenges.
             </p>
 
             {/* Radial Gradient */}
