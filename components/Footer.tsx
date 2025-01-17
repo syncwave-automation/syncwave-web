@@ -15,7 +15,7 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-     /* GitHub Icon SVG Path */
+    /* GitHub Icon SVG Path */
     {
       name: "Github",
       href: "https://github.com/syncwave-automation",
@@ -97,7 +97,7 @@ const Footer = () => {
           <div className="flex flex-col items-center lg:items-start">
             <SyncwaveLogo /> {/* Display company logo */}
             <p className="mt-2 text-sm text-center lg:text-left">
-              Building the future, one solution at a time.
+            Innovate. Automate. Advocate.
             </p>
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start mt-4 space-x-4">
@@ -135,10 +135,9 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="flex justify-between items-center">
-          <p className="text-sm text-gray-500">
-            ©2025 Syncwave Automation Pvt. Ltd.
+          <p className="  md:text-sm text-gray-500">
+            © 2025 Syncwave Automation Pvt. Ltd. - All rights reserved.
           </p>
-          <p className="text-sm text-gray-500">All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -146,4 +145,3 @@ const Footer = () => {
 };
 
 export default Footer; // Export the Footer component for use in other parts of the application.
-
