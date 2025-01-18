@@ -11,7 +11,8 @@
   "dependencies": {
     "@next/font": "^14.2.15",
     "@nextui-org/react": "^2.6.8",
-    "@tabler/icons-react": "^3.26.0",
+    "@radix-ui/react-label": "^2.1.1",
+    "@tabler/icons-react": "^3.28.1",
     "@tsparticles/engine": "^3.7.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.7.1",

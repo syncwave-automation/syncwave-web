@@ -97,7 +97,7 @@ const Footer = () => {
           <div className="flex flex-col items-center lg:items-start">
             <SyncwaveLogo /> {/* Display company logo */}
             <p className="mt-2 text-sm text-center lg:text-left">
-            Innovate. Automate. Advocate.
+              Building the future, one solution at a time.
             </p>
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start mt-4 space-x-4">

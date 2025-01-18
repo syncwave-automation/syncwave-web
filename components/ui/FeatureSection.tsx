@@ -21,7 +21,7 @@ export function FeaturesSection() {
     {
       title: "Ease of use",
       description:
-        "Crafted for simplicity, delivering benefits that reflect your investment",
+        "Crafted for simplicity, delivering benefits that reflect your investment.",
       icon: <IconEaseInOut />,
     },
     {
@@ -31,7 +31,7 @@ export function FeaturesSection() {
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "Complete Uptime Assurance",
+      title: "99.99% Uptime guarantee",
       description: "We are built to withstand any challenges.",
       icon: <IconCloud />,
     },

@@ -1,9 +1,9 @@
 "use client";
-import AboutUs from "@/components/About";
+import Contact from "@/components/contact";
 export default function Page() {
   return (
     <div>
-      <AboutUs />
+      <Contact />
     </div>
   );
 }

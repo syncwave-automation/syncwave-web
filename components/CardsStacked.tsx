@@ -28,23 +28,23 @@ export const Highlight = ({
 const CARDS = [
   {
     id: 0,
-    name: "Shizuku",
+    name: "Karen McConcern",
     designation: "Product Development Specialist",
     content: (
       <p>
-        Syncwave Automation Pvt. Ltd. excels in merging LegalTech and IoT solutions.{" "}
+                Syncwave Automation Pvt. Ltd. excels in merging LegalTech and IoT solutions.{" "}
         <Highlight>Their products, Automize and Leximo, </Highlight> offer innovative, user-friendly 
-        experiences that enhance efficiency and accessibility. 
+        experiences that enhance efficiency and accessibility.
       </p>
     ),
   },
   {
     id: 1,
-    name: "Nausicaä",
-    designation: "Environmental Scientist",
+    name: "Chad Thundercode",
+    designation: "Full-Stack Engineer",
     content: (
       <p>
-        I’m impressed with Automize’s{" "}
+                I’m impressed with Automize’s{" "}
         <Highlight>seamless integration capabilities.</Highlight> It provides exceptional control 
         and security, making automation simple and effective for any environment.
       </p>
@@ -52,11 +52,11 @@ const CARDS = [
   },
   {
     id: 2,
-    name: "Howl",
+    name: "Patricia Debugging",
     designation: "Chief Innovation Officer",
     content: (
       <p>
-        With Leximo, navigating the legal landscape has never been easier.{" "}
+                With Leximo, navigating the legal landscape has never been easier.{" "}
         <Highlight>Its comprehensive database and user-friendly interface</Highlight> empower users to find accurate 
         legal information quickly and efficiently.
       </p>
