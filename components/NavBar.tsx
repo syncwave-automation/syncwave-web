@@ -149,7 +149,7 @@ export default function NavBar() {
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">
-          <Link href="/automize">
+          <Link href="https://automize.syncwave.co.in" target="_blank">
             <Button color="default">Automize</Button>
           </Link>
         </NavbarItem>
