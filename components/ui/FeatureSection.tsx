@@ -13,48 +13,48 @@ import {
 export function FeaturesSection() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Crafted to empower our customers",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Designed for all who aspire to achieve more, no matter who they are.",
       icon: <IconTerminal2 />,
     },
     {
       title: "Ease of use",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Crafted for simplicity, delivering benefits that reflect your investment.",
       icon: <IconEaseInOut />,
     },
     {
       title: "Pricing like no other",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Experience the best market prices with complete transparency—no strings attached.",
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "99.99% Uptime guarantee",
+      description: "We are built to withstand any challenges.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Scalable and Modular Design",
+      description: "Enjoy versatile access options without the hassle of purchasing additional seats.",
       icon: <IconRouteAltLeft />,
     },
     {
       title: "24/7 Customer Support",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "We are available a 100% of the time. Our commitment to excellence doesn't compromise.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
+      title: "Robust Security Features",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "With a focus on security, our product includes rigorous safeguards to protect your information at all times.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "Your Satisfaction, Our Priority",
+      description: "Your satisfaction is at the heart of our mission, guiding us to create solutions that truly meet your needs.",
       icon: <IconHeart />,
     },
   ];

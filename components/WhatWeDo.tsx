@@ -14,7 +14,7 @@ const WhatWeDoSection = () => {
         <div className="container mx-auto max-w-7xl">
           {/* Section Title */}
           <h2 className="text-2xl sm:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 text-center">
-            What We Do
+            What We Offer
           </h2>
 
           <div className="relative w-full h-20 md:h-60 lg:h-20 flex items-center justify-center overflow-hidden bg-white dark:bg-black mt-6">
