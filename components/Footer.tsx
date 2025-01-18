@@ -11,7 +11,7 @@ const Footer = () => {
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
     { name: "Lexmo", href: "/lexmo" },
-    { name: "Automize", href: "/automize" },
+    { name: "Automize", href: "https://automize.syncwave.co.in", target: "_blank"  },
   ];
 
   const socialLinks = [
@@ -122,6 +122,7 @@ const Footer = () => {
               <Link
                 key={item.name}
                 href={item.href}
+                target={item.target}
                 className="hover:text-primary"
               >
                 {item.name} {/* Render menu link */}
