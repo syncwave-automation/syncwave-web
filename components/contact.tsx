@@ -1,15 +1,22 @@
 "use client";
 
-import React from "react";
+import React,{ useState } from "react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { HeroHighlight } from "@/components/ui/HeroHighlight";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Client , Databases} from "appwrite";
+import { unique } from "next/dist/build/utils";
 
 const ContactUs = () => {
   const { theme } = useTheme(); // Get the current theme
   const [isDarkMode, setIsDarkMode] = React.useState(false);
+
+  //states for the forms
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   React.useEffect(() => {
     setIsDarkMode(theme === "dark");
@@ -17,9 +24,31 @@ const ContactUs = () => {
 
   if (!theme) return null; // Avoid rendering until the theme is available
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted");
+    const client = new Client();
+    client
+      .setEndpoint('https://cloud.appwrite.io/v1') //this will change when we host our own
+      .setProject('678cb26e0006d87f3d59');  // this will also change
+    const databases = new Databases(client);
+    const databaseID = '678cb331001ca4bb595b'; // also this will change
+    const collectionID = '678cc421002a631b67fb'; // this will also change
+    try{
+      const respose = await databases.createDocument(
+        databaseID,
+        collectionID,
+        'unique()',
+        {
+          name: name, //make sure the fields are same as the ones in the appwrite database
+          email: email,
+          message: message
+        },
+      );
+      console.log("Form submitted",respose);
+    }
+    catch(error){
+      console.error('Error adding data to appwrite',error)
+    }
   };
 
   return (
@@ -84,11 +113,11 @@ const ContactUs = () => {
               <div className="space-y-4">
                 <div>
                   <Label htmlFor="name">Name</Label>
-                  <Input id="name" placeholder="Your Name" type="text" />
+                  <Input id="name" placeholder="Your Name" type="text" value={name} onChange={(e) => setName(e.target.value)}/>
                 </div>
                 <div>
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" placeholder="Your Email" type="email" />
+                  <Input id="email" placeholder="Your Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <div>
                   <Label htmlFor="message">Message</Label>
@@ -97,6 +126,8 @@ const ContactUs = () => {
                     placeholder="Your Message"
                     type="text"
                     className="h-16 resize-none"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   />
                 </div>
               </div>
